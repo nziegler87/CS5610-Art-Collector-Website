@@ -3,9 +3,6 @@ import './vendors/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 
-import * as dotenv from 'dotenv'
-
-
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Provider} from "react-redux";
 import {combineReducers, createStore} from "redux";
@@ -39,7 +36,6 @@ import newArtistsReducer from "./_reducers/new-artists-reducer";
 import singleUserReducer from "./_reducers/single-user-reducer";
 import artistSearchReducer from "./_reducers/artist-search-reducer";
 
-dotenv.config();
 
 const reducers = combineReducers({
     paintings: paintingsReducer,
