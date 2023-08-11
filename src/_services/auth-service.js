@@ -16,6 +16,8 @@ export const signup = async (email, username, password) => {
             return response.data;
         }
     } catch (e) {
+        console.log("An error was thrown")
+        console.log(e.toString())
         throw e;
     }
 }
